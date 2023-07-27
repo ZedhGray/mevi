@@ -1,0 +1,33 @@
+[
+  { "id": 1, "title": "Paquete 4 Paneles Solares", "subtitle": "GENERAN 540 KWH/BIMESTRAL", "precio": "$$$$" },
+  {
+    "id": 2,
+    "title": "Paquete 6 Paneles Solares",
+    "subtitle": "GENERAN 810 KWH/BIMESTRAL",
+    "precio": "58,500"
+  },
+  {
+    "id": 3,
+    "title": "Paquete 8 Paneles Solares",
+    "subtitle": "GENERAN 1080 KWH/BIMESTRAL",
+    "precio": "78,500"
+  },
+  {
+    "id": 4,
+    "title": "Paquete 10 Paneles Solares",
+    "subtitle": "GENERAN 1350 KWH/BIMESTRAL",
+    "precio": "95,000"
+  },
+  {
+    "id": 5,
+    "title": "Paquete 16 Paneles Solares",
+    "subtitle": "GENERAN 540 KWH/BIMESTRAL",
+    "precio": "$$$$"
+  },
+  {
+    "id": 6,
+    "title": "Paquete 20 Paneles Solares",
+    "subtitle": "GENERAN 540 KWH/BIMESTRAL",
+    "precio": "$$$$"
+  }
+]

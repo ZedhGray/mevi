@@ -1,0 +1,88 @@
+/* MENU */
+.contenedor-header {
+  background: rgba(53, 54, 58, 255);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.contenedor-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+.contenedor-header header .logo {
+  justify-items: center;
+  display: flex;
+}
+.contenedor-header header .logo img {
+  width: 50px;
+  height: 50px;
+}
+.contenedor-header header .logo a {
+  font-family: 'Righteous';
+  justify-items: center;
+  font-size: 36px;
+  color: #eb8b0f;
+  text-decoration: none;
+}
+.sp {
+  font-family: 'Righteous';
+  justify-items: center;
+  font-size: 36px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.contenedor-header header ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+.contenedor-header header nav ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover {
+  color: #244177;
+}
+.nav-responsive {
+  background-color: #1b3669;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width: 980px) {
+  nav {
+    display: none;
+  }
+  .nav-responsive {
+    display: block;
+  }
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 55px;
+    background-color: #252a2e;
+    width: 180px;
+  }
+  nav.responsive ul {
+    display: block !important;
+  }
+  nav.responsive ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
+}
