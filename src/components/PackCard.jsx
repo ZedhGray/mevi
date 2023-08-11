@@ -2,7 +2,7 @@ import './PackCard.css'
 
 const PackCard = ({ title, subtitle, precio }) => {
   return (
-    <div className="card">
+    <article className="card">
       <div className="card-image">
         <img src="../assets/resources/panelbgr.png" alt="" />
       </div>
@@ -13,7 +13,7 @@ const PackCard = ({ title, subtitle, precio }) => {
           Precio <span className="name">$</span> {precio}
         </div>
       </div>
-    </div>
+    </article>
   )
 }
 

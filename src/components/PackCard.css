@@ -1,17 +1,19 @@
 .card {
-  width: 400px;
+  width: 300px;
   height: 400px;
   background: #2b2928c5;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.950);
-  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.95);
   padding: 0.4em;
-  border-radius: 6px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  flex: 0 0 auto;
+  margin: 0 20px;
+  min-width: 350px;
 }
 
 .card-image {
@@ -63,6 +65,3 @@
   font-weight: 600;
 }
 
-.name:hover {
-  cursor: pointer;
-}

@@ -4,7 +4,10 @@
   align-items: center;
   flex-direction: column;
 
-  width: 97.8vw;
+  width: 100vw;
+}
+.App::-webkit-scrollbar {
+  width: 0.5em;
 }
 /*Hero*/
 
@@ -20,30 +23,55 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+  width: 100vw;
 
   color: #fff;
+
   display: flex;
   align-items: center;
-  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
 
   padding: 0;
   margin: 0;
 }
-.inicio .contenido-banner {
-  padding: 0;
-  max-width: 560px;
-  margin: auto;
-  text-align: center;
-  border-radius: 10px;
+.contenedor-banner-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  height: 200px;
 }
-.inicio .contenido-banner img {
-  display: block;
+.contenido-banner-img1 {
+  height: 150px;
+  width: 200px;
+}
+.contenido-banner-img1 img {
   width: 100%;
-  margin: auto;
-  border-radius: 25%;
+  height: 100%;
 }
-.inicio .contenido-banner img:hover {
+.contenido-banner-img2 {
+  height: 200px;
+  width: 200px;
+}
+.contenido-banner-img2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.contenido-banner-img2 img:hover {
   transform: scale(0.98);
+}
+
+.inicio .contenido-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  height: 30vh;
 }
 .inicio .contenido-banner h1 {
   margin-top: 40px;
@@ -84,27 +112,252 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   align-content: center;
 
   width: 100vw;
-  height: 200vh;
+  height: 100vh;
+}
+.Packtext {
+  width: 100%;
+  height: 8vh;
+  text-align: center;
+
+  background-color: black;
+  color: #fff;
+}
+.Packtext h2 {
+  font-size: 2rem;
+  font-family: 'Righteous';
 }
 
 .Packages .contenido-seccion {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  justify-items: center;
-  align-items: stretch;
-
-  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
+.Packages .contenido-seccion::-webkit-scrollbar {
+  width: 1px;
+  background: #fe871f;
+  border-radius: 25px;
+}
 /*Models*/
+.models {
+  background-color: rgb(46, 45, 45);
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  align-content: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+.contenedor-models {
+  overflow: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.book {
+  position: relative;
+  border-radius: 10px;
+  width: 220px;
+  height: 600px;
+  background-color: rgba(34, 34, 34, 255);
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+  margin: 0 20px;
+  min-width: 350px;
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  background-color: rgba(60,60,60,255);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.contenido-m {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+.contenido-m-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 70%;
+  height: 100%;
+}
+.contenido-m-img img {
+  width: 100%;
+  height: 100%;
+}
+.contenido-m-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.contenido-m-text h2 {
+  font-size: 2rem;
+  font-family: 'Righteous';
+  color: white;
+}
+
+.models .contenedor-models::-webkit-scrollbar {
+  width: 1px;
+  background: #202020;
+  border-radius: 5px;
+}
+/*Contact US*/
+.Contact_Us{
+  background-color: rgb(46, 45, 45);
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  align-content: center;
+
+  width: 100vw;
+  height: auto;
+}
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 15px 10px;
+  border-radius: 5em;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+
+.whatsapp {
+  background-color: #3e8668;
+}
+
+.whatsapp svg {
+  fill: #f2f2f2;
+}
+
+.whatsapp:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
 
 /*Footer*/
 

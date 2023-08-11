@@ -37,7 +37,7 @@ class Navbar extends React.Component {
             <ul>
               <li><a href="#inicio" onClick={this.seleccionar}>INICIO</a></li>
               <li><a href="#Packages" onClick={this.seleccionar}>PAQUETES</a></li>
-              <li><a href="#skills" onClick={this.seleccionar}>MODELOS</a></li>
+              <li><a href="#models" onClick={this.seleccionar}>MODELOS</a></li>
               <li><a href="#curriculum" onClick={this.seleccionar}>CONTACTANOS</a></li>
             </ul>
           </nav>
